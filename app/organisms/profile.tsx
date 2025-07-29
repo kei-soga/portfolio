@@ -13,6 +13,26 @@ export default function Profile() {
                     曽我 敬
                 </h1>
                 <p>フリーランスエンジニア</p>
+                <ul className="flex flex-row space-x-4 mt-4 mx-auto w-16">
+                    <li>
+                        <a href="https://lin.ee/E9PQN3IZ">
+                            <img
+                                src="/sns/line_app_icon.png"
+                                alt="友だち追加"
+                                width="24"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/kei-soga-127362200">
+                            <img
+                                src="/sns/linkedin-icon.svg"
+                                alt="友だち追加"
+                                width="24"
+                            />
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div className="md:w-5/6 md:px-12">
                 <h2 className="text-xl font-semibold text-indigo-800 mb-4">
@@ -78,10 +98,13 @@ export default function Profile() {
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            <path
+                                fill-rule="evenodd"
+                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                clip-rule="evenodd"
+                            />
                         </svg>
-                        contact@keisoga.com
+                        千葉県松戸市
                     </li>
                     <li className="flex items-center">
                         <svg
@@ -90,13 +113,10 @@ export default function Profile() {
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
-                            <path
-                                fill-rule="evenodd"
-                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                clip-rule="evenodd"
-                            />
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                         </svg>
-                        千葉県松戸市
+                        contact@keisoga.com
                     </li>
                 </ul>
             </div>
