@@ -8,7 +8,6 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
-import { Header } from "~/organisms/header";
 import { Footer } from "~/organisms/footer";
 import "./app.css";
 
@@ -38,8 +37,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <Links />
             </head>
             <body className="text-gray-600 noto-sans-jp font-normal">
-                {/* <Header /> */}
-
                 {children}
 
                 <Footer />

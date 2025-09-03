@@ -4,11 +4,15 @@ export default function Achievement({
     imgsrc,
     summary,
     term,
+    role,
+    roleRemarks,
     devEnv,
 }: {
     imgsrc: string;
     summary: string;
     term: { from: string; to?: string };
+    role?: string;
+    roleRemarks?: string;
     devEnv: DevEnvTagsProps;
 }) {
     return (
@@ -31,6 +35,21 @@ export default function Achievement({
                 <p className="leading-relaxed text-base mb-4">
                     {term.from} ～ {term.to ? term.to : null}
                 </p>
+                {role ? (
+                    <>
+                        <h3 className="tracking-widest text-indigo-800 text-xs font-medium">
+                            役割
+                        </h3>
+                        <p className="leading-relaxed text-base mb-4">
+                            {role}
+                            {roleRemarks ? (
+                                <span className="text-xs block">
+                                    ({roleRemarks})
+                                </span>
+                            ) : null}
+                        </p>
+                    </>
+                ) : null}
                 <div>
                     <h3 className="tracking-widest text-indigo-800 text-xs font-medium">
                         開発環境

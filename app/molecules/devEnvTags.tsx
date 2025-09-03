@@ -21,6 +21,7 @@ import GitHubTag from "~/atoms/tags/githubTag";
 import GitLabTag from "~/atoms/tags/gitlabTag";
 import AsanaTag from "~/atoms/tags/asanaTag";
 import JiraTag from "~/atoms/tags/jiraTag";
+import BacklogTag from "~/atoms/tags/backlogTag";
 
 export interface DevEnvTagsProps {
     python?: boolean;
@@ -46,6 +47,7 @@ export interface DevEnvTagsProps {
     gitlab?: boolean;
     asana?: boolean;
     jira?: boolean;
+    backlog?: boolean;
 }
 
 export default function DevEnvTags({
@@ -72,6 +74,7 @@ export default function DevEnvTags({
     gitlab = false,
     asana = false,
     jira = false,
+    backlog = false,
 }: DevEnvTagsProps) {
     return (
         <>
@@ -99,6 +102,7 @@ export default function DevEnvTags({
                 {gitlab ? <GitLabTag className="mr-3 mb-2" /> : null}
                 {asana ? <AsanaTag className="mr-3 mb-2" /> : null}
                 {jira ? <JiraTag className="mr-3 mb-2" /> : null}
+                {backlog ? <BacklogTag className="mr-3 mb-2" /> : null}
             </div>
         </>
     );
