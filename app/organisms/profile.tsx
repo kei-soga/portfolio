@@ -9,41 +9,27 @@ export default function Profile() {
                     alt="プロフィール画像"
                     className="rounded-full w-48 h-48 mx-auto mb-4 border-4 border-indigo-800 transition-transform duration-300 hover:scale-105"
                 />
-                <h1 className="text-2xl font-bold text-indigo-800 mb-2">
-                    曽我 敬
-                </h1>
+                <h1 className="text-2xl font-bold text-indigo-800 mb-2">曽我 敬</h1>
                 <p>フリーランスエンジニア</p>
                 <ul className="flex flex-row space-x-4 mt-4 mx-auto w-16">
                     <li>
                         <a href="https://lin.ee/E9PQN3IZ">
-                            <img
-                                src="/sns/line_app_icon.png"
-                                alt="友だち追加"
-                                width="24"
-                            />
+                            <img src="/sns/line_app_icon.png" alt="友だち追加" width="24" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/kei-soga-127362200">
-                            <img
-                                src="/sns/linkedin-icon.svg"
-                                alt="友だち追加"
-                                width="24"
-                            />
+                            <img src="/sns/linkedin-icon.svg" alt="友だち追加" width="24" />
                         </a>
                     </li>
                 </ul>
             </div>
             <div className="md:w-5/6 md:px-12">
-                <h2 className="text-xl font-semibold text-indigo-800 mb-4">
-                    自己紹介
-                </h2>
+                <h2 className="text-xl font-semibold text-indigo-800 mb-4">自己紹介</h2>
                 <p className="mb-6">
                     RPA（UiPath）開発に1年以上、フロントエンドとバックエンドの開発に4年以上携わってきました。
                 </p>
-                <h2 className="text-xl font-semibold text-indigo-800 mb-4">
-                    スキル
-                </h2>
+                <h2 className="text-xl font-semibold text-indigo-800 mb-4">スキル</h2>
                 <div className="flex flex-wrap gap-2 mb-6">
                     <TextChip text="Python" />
                     <TextChip text="Flask" />
@@ -87,9 +73,7 @@ export default function Profile() {
                     <TextChip text="PowerShell" />
                     <TextChip text="Bash" />
                 </div>
-                <h2 className="text-xl font-semibold text-indigo-800 mb-4">
-                    連絡先
-                </h2>
+                <h2 className="text-xl font-semibold text-indigo-800 mb-4">連絡先</h2>
                 <ul className="space-y-2 text-gray-700">
                     <li className="flex items-center">
                         <svg

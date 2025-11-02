@@ -21,10 +21,8 @@ export default function Home() {
                     <div className="flex flex-wrap -m-4">
                         <Achievement
                             imgsrc="/achievement/cosmetics.jpg"
-                            summary="化粧品販売の顧客管理システム開発"
-                            term={{ from: "2025/08" }}
-                            role="サブリーダー"
-                            roleRemarks="コードレビュー、メンバーへの技術サポート"
+                            summary="某系商品会社向け顧客管理システム開発"
+                            term={{ from: "2025/08", to: "2025/11" }}
                             devEnv={{
                                 python: true,
                                 html: true,
